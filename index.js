@@ -1,13 +1,29 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const lowerCaseWord=word.toLowerCase();
+  //reversed form of the word
+  const reversedWord=lowerCaseWord.split('').reverse().join('');
+  
+  return lowerCaseWord===reversedWord;
+
+  
 }
+isPalindrome('abba')
+isPalindrome('racecar')
+isPalindrome('a')
+isPalindrome('robot')
+isPalindrome('ab')
 
 /* 
-  Add your pseudocode here
+  Convert the string to lowerCase
+  Check if the reversed form and the original are the same.
+  if the two match return true and if they don't return false
+
+
 */
 
 /*
-  Add written explanation of your solution here
+  isPalindrome function checks if a given word is a palindrome.
+
 */
 
 // You can run `node index.js` to view these console logs
